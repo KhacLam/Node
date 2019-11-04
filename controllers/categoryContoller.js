@@ -5,3 +5,6 @@ const catchAsync = require('./../utlis/catchAsync');
 
 exports.getAllCate = handleFactory.getAllDocument(Category);
 exports.createCate = handleFactory.createOneDocument(Category);
+exports.updateCate = handleFactory.updateOneDocument(Category);
+exports.getOneCateBySlug = handleFactory.getOneDocument(Category);
+exports.deleteOneCate = handleFactory.deleteOneDocument(Category);

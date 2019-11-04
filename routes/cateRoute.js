@@ -8,4 +8,9 @@ router
     .get(cateController.getAllCate)
     .post(cateController.createCate)
 
+router
+    .route('/:id')
+    .get(cateController.getOneCateBySlug)
+    .patch(cateController.updateCate)
+    .delete(cateController.deleteOneCate)
 module.exports = router;

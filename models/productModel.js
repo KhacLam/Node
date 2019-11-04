@@ -51,12 +51,8 @@ const productSchema = mongoose.Schema({
         default: false
     },
     options: [{
-        name: {
-            type: String
-        },
-        optionVals: {
-            type: String
-        }
+        name: String,
+        optionVals: [String]
     }],
     createdAt: {
         type: Date,
