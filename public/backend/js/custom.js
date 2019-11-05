@@ -37,3 +37,4 @@ window.onload = function() {
         scaleFontColor: '#c5c7cc'
     });
 };
+CKEDITOR.replace('description');

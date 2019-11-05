@@ -1,4 +1,12 @@
-exports.getIndex = (req, res) => {
+const Category = require('./../models/categoryModel');
+
+// const getInfor = () => {
+//     let infor = {}
+//     infor.cate = Category.find();
+//     return infor;
+// }
+
+exports.getIndex = async(req, res) => {
     res.status(200).render('home', {
         title: 'Home'
     })
@@ -34,8 +42,20 @@ exports.getRegister = (req, res) => {
     })
 }
 
+exports.getMyAccount = (req, res) => {
+    res.status(200).render('account', {
+        title: 'My account'
+    })
+}
+
 exports.getManage = (req, res) => {
     res.status(200).render('admin/pages/dashboard', {
         title: 'Dashboard'
+    })
+}
+
+exports.getAddProduct = (req, res) => {
+    res.status(200).render('admin/pages/addProduct', {
+        title: 'Create Product'
     })
 }
